@@ -19,8 +19,9 @@ picture,img{display:block;max-width:100%}img{height:auto}
 [id]{scroll-margin-block-start:1.3rem}
 .wrap{width:min(calc(100% - 6rem),1170px);margin-inline:auto}
 .section{padding-block:clamp(2.7rem,4.6vw,4.25rem)}
-.band{background:var(--paper);border-block:1px solid var(--line)}
-#about{background:var(--wash)}
+.band{background:var(--paper)}
+.tone-blue{background:var(--wash);border-block:1px solid var(--line)}
+#papers{border-top:1px solid var(--line)}
 .section-heading{margin-bottom:clamp(1.2rem,2vw,1.8rem)}
 .kicker,.eyebrow,.subhead,.output-type{font:650 .72rem/1.45 var(--sans);letter-spacing:.065em;color:var(--blue);text-transform:uppercase}
 .kicker{margin-bottom:.63rem;display:flex;align-items:center;gap:.65rem}
@@ -102,7 +103,7 @@ figcaption{font-size:.78rem;margin-top:.45rem}
 .life-gallery{display:grid;grid-template-columns:.561fr .75fr .75fr 1fr;gap:.42rem;align-items:start}
 footer{--focus:#b9daff;background:#1c3047;padding:clamp(2rem,3.5vw,3.1rem) 0;color:white}
 .footer-inner{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:2rem;align-items:center}
-.footer-inner .kicker{color:#c8d8ea;margin-bottom:.45rem}.footer-inner h2{font-size:2rem;margin-bottom:.63rem}
+.footer-inner .kicker{color:#c8d8ea;margin-bottom:.45rem}.footer-inner h2{font-size:2rem;margin:0}
 .footer-inner>div>p:not(.kicker){color:#e5edf7;max-width:62ch;font-size:.93rem;line-height:1.55}
 .footer-actions{justify-self:end;display:grid;justify-items:start;gap:.5rem}
 .foot-email,.back{color:#fff;display:inline-flex;align-items:center;min-height:44px}.foot-email{font:400 clamp(1rem,1.65vw,1.4rem)/1.35 var(--serif);text-decoration-color:#a6bfdd}.back{font-size:.8rem;color:#d6e4f4;text-decoration:none}
@@ -149,7 +150,7 @@ footer{--focus:#b9daff;background:#1c3047;padding:clamp(2rem,3.5vw,3.1rem) 0;col
 }
 @media print{
  @page{margin:15mm}:root{font-size:10.5pt}.wrap{width:100%}.masthead,.actions .button,.skip,.back{display:none}
- .section,.hero,footer{padding:12pt 0}.band,#about,footer{background:white;color:#15263a}.footer-inner p,.foot-email{color:#15263a!important}
+ .section,.hero,footer{padding:12pt 0}.band,.tone-blue,footer{background:white;color:#15263a}.footer-inner p,.foot-email{color:#15263a!important}
  .hero{grid-template-columns:2fr 1fr;gap:20pt}.hero-copy{display:block}.portrait{grid-column:auto;grid-row:auto;max-width:120pt}
  .hero-question{font-size:16pt}.education li,.output-row,.role-head,figure{break-inside:avoid}
  .academic-life,.role-head,.footer-inner,.life-intro{display:block}.role-spread,.life-layout{grid-template-columns:1fr 1fr}
